@@ -7,6 +7,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -651,7 +657,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -677,7 +683,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -775,7 +781,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -822,7 +828,34 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
+}
+
+.partners-name {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 5px 0;
+    font-size: 1.5em;
+}
+
+.partners-items {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.partners-items a {
+    color: #FFF;
+}
+.partners-items a:hover {
+    text-decoration: underline;
+}
+label {
+    font-size: 1.3em;
+}
+.gmap {
+    border: none;
+    width: 100%;
+    height: 400px;
 }
 
 @media (max-width: 1024px) {
