@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="agence, design, paris, site web, création, communication">
+    <meta name="keywords" content="agence, design, lyon, site web, création, communication">
     <meta name="description" content="La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -36,7 +36,9 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -45,9 +47,7 @@
 						<a href="index.html">Accueil</a>
 					</li>
 					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="contact.html">Nous contacter</a>
 					</li>
 				</ul>
 			</div>
@@ -81,27 +81,28 @@
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control" name="name" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" class="form-control" name="email" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="contact">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input id="contact" class="form-control" type="text" name="contact" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+						<textarea id="message" class="form-control" name="message" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -109,6 +110,7 @@
 				</form>
 			</div>
 			<div class="col-sm-6">
+				<iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34046.96779130428!2d4.820266722962346!3d45.75910051335884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Place%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1623405671309!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
 				<p>
 					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 				</p>
@@ -151,6 +153,17 @@
 						<div class="text-center">
 							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<span class="partners-name">Partenaires</span>
+							<ul class="partners-items">
+								<li><a href="voiture.com">voiture.com</a></li>
+								<li><a href="pizza.com">pizza.com</a></li>
+								<li><a href="matoiture.com">matoiture.com</a></li>
+								<li><a href="immobilierseo.com">immobilierseo.com</a></li>
+							</ul>		
 					</div>
 				</div>
 			</div>
